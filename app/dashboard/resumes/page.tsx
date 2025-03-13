@@ -34,7 +34,7 @@ const mockResumes = [
 ]
 
 export default function ResumesPage() {
-  const [resumes, setResumes] = useState(mockResumes)
+  const [resumes] = useState(mockResumes)
   const [searchQuery, setSearchQuery] = useState("")
 
   // Filter resumes based on search query
