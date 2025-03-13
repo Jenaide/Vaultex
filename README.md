@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Job Vault
 
-## Getting Started
+![Job Vault Logo](https://via.placeholder.com/150x150.png?text=Job+Vault)
 
-First, run the development server:
+A comprehensive job application tracking system built with Django and Next.js that helps job seekers organize their job search process.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+  - [Frontend Setup](#frontend-setup)
+  - [Backend Setup](#backend-setup)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Job Vault is a full-stack web application designed to help job seekers track and manage their job applications efficiently. The system provides a centralized platform to store application details, track application status, set reminders for follow-ups, and manage multiple resume versions.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **User Authentication**: Secure login and signup functionality
+- **Dashboard**: Overview of application status and upcoming reminders
+- **Job Application Management**:
+  - Add, edit, and delete job applications
+  - Track application status (Applied, Interview, Offer, Rejected, Follow-up)
+  - Store company details, job descriptions, and contact information
+- **Notes System**: Add notes to applications to track interactions and feedback
+- **Resume Management**: Upload and manage multiple resume versions
+- **Reminder System**: Set and manage reminders for follow-ups and interviews
+- **Responsive Design**: Mobile-friendly interface for on-the-go access
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Frontend
+- **Next.js**: React framework for server-side rendering and static site generation
+- **TypeScript**: Type-safe JavaScript
+- **Tailwind CSS**: Utility-first CSS framework
+- **shadcn/ui**: Reusable UI components
+- **Axios**: HTTP client for API requests
+- **React Query**: Data fetching and state management
 
-## Deploy on Vercel
+### Backend
+- **Django**: Python web framework
+- **Django REST Framework**: Toolkit for building Web APIs
+- **PostgreSQL**: Relational database
+- **JWT Authentication**: Secure user authentication
+- **Celery** (optional): Task queue for handling background jobs like email notifications
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Landing Page](https://via.placeholder.com/800x450.png?text=Landing+Page)
+![Dashboard](https://via.placeholder.com/800x450.png?text=Dashboard)
+![Application Details](https://via.placeholder.com/800x450.png?text=Application+Details)
+
+## Installation
+
+### Prerequisites
+- Node.js (v14 or later)
+- Python (v3.8 or later)
+- PostgreSQL
+
+### Frontend Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jenaide/Vaultex.git
+   cd Vaultex/frontend
